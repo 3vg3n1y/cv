@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Evgeniy Korobkov</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>  
+        <header>
+            <nav class="navbar">
+                <a class="navbar-brand" href="#">
+                    <span>EK</span>
+                </a>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="resume.html">RESUME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>      
+        
+        <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8">
+            <h4>Shoot a message!</h4>
+            <div id="message"></div>
+            <form method="post" action="php/contact.php" name="cform" id="cform">
+                <input name="name" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Your name..." >
+                <input name="email" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="Your email..." >
+                <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your message..."></textarea>
+                <input type="submit" id="submit" name="send" class="submitBnt" value="Send message">                
+            </form>
+        </div>
+        <hr>
+        <footer class="footer">
+            <div class="container-fluid text-center">
+                <p>2019, Evgeniy Korobkov</p>
+            </div>
+        </footer>
+    </body>
+</html>
